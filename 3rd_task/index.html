@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Manager</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f0f2f5; }
+        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1, h2 { color: #333; }
+        .book-list { list-style: none; padding: 0; }
+        .book-item { background: #e9ecef; padding: 10px; margin-bottom: 5px; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; }
+        .book-item button { margin-left: 10px; padding: 5px 10px; border: none; border-radius: 4px; cursor: pointer; }
+        .book-item button.update { background-color: #007bff; color: white; }
+        .book-item button.delete { background-color: #dc3545; color: white; }
+        form { margin-top: 20px; display: flex; gap: 10px; }
+        input[type="text"] { flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        form button { padding: 8px 15px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Book Manager</h1>
+        <h2>Add a New Book</h2>
+        <form id="addBookForm">
+            <input type="text" id="addTitle" placeholder="Title" required>
+            <input type="text" id="addAuthor" placeholder="Author" required>
+            <button type="submit">Add Book</button>
+        </form>
+        <hr>
+        <h2>Books List</h2>
+        <ul id="bookList" class="book-list"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
