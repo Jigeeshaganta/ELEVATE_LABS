@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Homes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+  <header>
+    <nav class="navbar">
+      <div class="logo-section">
+        <img src="images/logo1.png" alt="Logo" class="logo" />
+        <span class="brand-name">Real Homes</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+      <div class="nav-right">
+        <input type="text" placeholder="Search..." />
+        <button onclick="openLogin()">Login</button>
+        <button onclick="openSignup()">Signup</button>
+      </div>
+    </nav>
+  </header>
+
+
+   <section class="slideshow" id="home">
+    <div class="card active"> <h2>Welcome to Real Homes – the place you belong.</h2></div>
+    <div class="card"><h2>Find your dream house at the best price.</h2></div>
+    <div class="card"><h2>Contact us anytime, anywhere for property help.</h2></div>
+  </section>
+
+  <section id="about" class="about-section">
+  <img src="images/about1.png" alt="About Image" />
+  <div>
+    <h2>About Us</h2>
+    <p>Real Homes is a trusted real estate solution for individuals seeking comfort and elegance in one place. Our platform is designed to make home buying easy and enjoyable.</p>
+  </div>
+</section>
+
+  <
+  <section id="features" class="features-section">
+    <h2>Our Features</h2>
+    <p>coming soon...</p>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  
+  <footer class="site-footer">
+    <div class="footer-left">
+      <img src="images/logo1.png" alt="Logo" class="footer-logo" />
+      <p>© Real Homes – All rights reserved</p>
+      <p>Email: example@email.com</p>
+      <p>Phone: +91 98765 43210</p>
+    </div>
+
+    <div class="footer-right">
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" /></a>
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" /></a>
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" /></a>
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" /></a>
+    </div>
+  </footer>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeLogin()">&times;</span>
+      <h2>Login</h2>
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </div>
+  </div>
+
+
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeSignup()">&times;</span>
+      <h2>Signup</h2>
+      <input type="text" placeholder="Username" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Signup</button>
+      <p>Already have an account? <a href="#" onclick="switchToLogin()">Sign in</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
